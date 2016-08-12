@@ -46,28 +46,41 @@ body
 
   h1
     color: $accent-color
-    //text-transform: uppercase
-    font-family: 'Raleway', sans-serif
-    font-weight: 700
+    text-transform: uppercase
+    font-family: 'Roboto', sans-serif
+    font-weight: 100
 
   p
     display: inline
     float: none
     vertical-align: middle
     font-family: 'Roboto', sans-serif
-    font-weight: 400
+    font-weight: 300
     font-size: 1.2em
     color: $accent-color
 
   .col-md-8
     margin-top: 60px
 
-.down-icon
-    position: relative
-    top: -30px
+.hero
+  display: block
+  margin: 0 auto
+  text-align: center
+  height: 700px
+  padding-top: 120px
+  font-family: 'Raleway', sans-serif
+  text-transform: uppercase
+  color: $accent-color
+  background-image: url('background.jpeg')
+  background-size: cover
+  background-attachment: fixed
+  background-position: center
+  background-repeat: no-repeat
 
-    i
-      display: block
-      text-align: center
-      font-size: 72px
-      color: $accent-color
+  .col-md-4
+    vertical-align: middle
+
+.about
+  height: 500px
+  background-color: $accent-color
+  width: 100%
