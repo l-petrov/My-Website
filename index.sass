@@ -4,23 +4,6 @@ $accent-color: #0d0d0d
 body
   background-color: $primary-color
 
-.header h1
-  font-weight: 500
-  font-size: 3em
-  border-style: solid
-  border-width: 0 0 1px 0
-  border-color: $primary-color
-  display: inline-block
-  margin-top: 60px
-
-.header h2
-  font-weight: 100
-  letter-spacing: 4px
-  font-size: 2em
-  display: block
-  padding-bottom: 60px
-  margin: 0
-
 .header
   text-align: center
   font-family: 'Roboto', sans-serif
@@ -30,6 +13,23 @@ body
   height: auto
   text-align: center
 
+  h1
+    font-weight: 500
+    font-size: 3em
+    border-style: solid
+    border-width: 0 0 1px 0
+    border-color: $primary-color
+    display: inline-block
+    margin-top: 60px
+
+  h2
+    font-weight: 100
+    letter-spacing: 4px
+    font-size: 2em
+    display: block
+    padding-bottom: 60px
+    margin: 0
+
 #profile-img
   border-style: solid
   border-width: 3px
@@ -38,11 +38,15 @@ body
   height: 100%
   width: 100%
 
-.about
-  position: relative
-  width: 66%
-  margin: 0 auto
-  padding-top: 70px
+.hero
+  height: 650px
+  padding-top: 120px
+  color: $accent-color
+  background-image: url('background.jpeg')
+  background-size: cover
+  background-attachment: fixed
+  background-position: center
+  background-repeat: no-repeat
 
   h1
     color: $accent-color
@@ -61,24 +65,6 @@ body
 
   .col-md-8
     margin-top: 60px
-
-.hero
-  display: block
-  margin: 0 auto
-  text-align: center
-  height: 700px
-  padding-top: 120px
-  font-family: 'Raleway', sans-serif
-  text-transform: uppercase
-  color: $accent-color
-  background-image: url('background.jpeg')
-  background-size: cover
-  background-attachment: fixed
-  background-position: center
-  background-repeat: no-repeat
-
-  .col-md-4
-    vertical-align: middle
 
 .about
   height: 500px
