@@ -1,9 +1,11 @@
 $primary-color: #fff
 $accent-color: #0d0d0d
+$headline-font: 'Roboto', sans-serif
+$para-font: 'Raleway', sans-serif
 
 .header
   text-align: center
-  font-family: 'Roboto', sans-serif
+  font-family: $headline-font
   text-transform: uppercase
   background-color: $accent-color
   color: $primary-color
@@ -54,19 +56,37 @@ $accent-color: #0d0d0d
   h1
     color: $accent-color
     text-transform: uppercase
-    font-family: 'Roboto', sans-serif
+    font-family: $headline-font
     font-weight: 100
 
   p
     display: inline
     float: none
     vertical-align: middle
-    font-family: 'Roboto', sans-serif
+    font-family: $para-font
     font-weight: 300
     font-size: 1.2em
     color: $accent-color
 
-.about
+.skills
   height: 500px
   background-color: $accent-color
   width: 100%
+  color: $primary-color
+  text-align: center
+
+  .row
+    width: 66%
+    margin: 0 auto
+    padding-top: 10%
+
+    h1
+      //text-transform: uppercase
+      font-family: $headline-font
+      letter-spacing: 4px
+
+    p
+      font-size: 1.2em
+      font-family: $para-font
+.contact
+  height: 500px
