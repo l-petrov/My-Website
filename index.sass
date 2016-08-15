@@ -3,6 +3,21 @@ $accent-color: #0d0d0d
 $headline-font: 'Roboto', sans-serif
 $para-font: 'Raleway', sans-serif
 
+@mixin centerer
+  position: absolute
+  top: 50%
+  left: 50%
+  transform: translate(-50%, -50%)
+
+@mixin custom-background
+  background-size: cover
+  background-attachment: fixed
+  background-position: top
+  background-repeat: no-repeat
+
+.row-center
+  @include centerer
+
 .header
   text-align: center
   font-family: $headline-font
@@ -43,10 +58,7 @@ $para-font: 'Raleway', sans-serif
   padding-top: 120px
   color: $accent-color
   background-image: url('background.jpeg')
-  background-size: cover
-  background-attachment: fixed
-  background-position: top
-  background-repeat: no-repeat
+  @include custom-background
 
   .row
     width: 66%
@@ -68,30 +80,43 @@ $para-font: 'Raleway', sans-serif
     font-size: 1.2em
     color: $accent-color
 
+    a
+      color: $accent-color
+      border-style: dashed
+      border-width: 0 0 1px 0
+      border-color: $accent-color
+    a:hover
+      text-decoration: none
+      border-color: $primary-color
+
 .skills
-  height: 500px
+  min-height: 500px
   background-color: $accent-color
   width: 100%
   color: $primary-color
   text-align: center
+  position: relative
 
-  .row
-    width: 66%
-    margin: 0 auto
-    padding-top: 10%
+  h1
+    //text-transform: uppercase
+    font-family: $headline-font
+    letter-spacing: 4px
 
-    h1
-      //text-transform: uppercase
-      font-family: $headline-font
-      letter-spacing: 4px
+  p
+    font-size: 1.2em
+    font-family: $para-font
 
-    p
-      font-size: 1.2em
-      font-family: $para-font
 .contact
   height: 650px
   background-image: url('background-2.jpeg')
-  background-size: cover
-  background-attachment: fixed
-  background-position: top
-  background-repeat: no-repeat
+  @include custom-background
+  position: relative
+
+  .row
+    width: 50%
+
+    .col-md-4
+      text-align: center
+      font-size: 72px
+i
+  color: $accent-color
